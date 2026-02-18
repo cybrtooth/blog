@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+    <!-- MathJax for mathematical notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+    };
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="/" class="nav-title">Blog</a>
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Posts</a>
+                    <a href="/archive.html" class="nav-link">Archive</a>
+                    <a href="/search.html" class="nav-link">Search</a>
+                    <a href="/tags.html" class="nav-link">Tags</a>
+                    <a href="/faq.html" class="nav-link">FAQ</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-toggle-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="posts-list">
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="posts/sample-post.html">Sample Technical Post</a>
+                        </h2>
+                    </header>
+                    <div class="entry-content">
+                        <p>This is a sample technical blog post demonstrating the format and structure of posts on this blog. It covers topics related to machine learning, AI, and technical research.</p>
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="entry-meta">
+                            <time datetime="2024-02-18">February 18, 2024</time>
+                            <span class="reading-time">5 min read</span>
+                            <div class="entry-tags">
+                                <a href="/tags/machine-learning.html" class="tag">machine-learning</a>
+                                <a href="/tags/ai.html" class="tag">ai</a>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+
+                <article class="post-entry">
+                    <header class="entry-header">
+                        <h2 class="entry-title">
+                            <a href="posts/another-post.html">Understanding Deep Learning Fundamentals</a>
+                        </h2>
+                    </header>
+                    <div class="entry-content">
+                        <p>An exploration of fundamental concepts in deep learning, covering neural network architectures, optimization techniques, and practical implementation considerations.</p>
+                    </div>
+                    <footer class="entry-footer">
+                        <div class="entry-meta">
+                            <time datetime="2024-02-15">February 15, 2024</time>
+                            <span class="reading-time">8 min read</span>
+                            <div class="entry-tags">
+                                <a href="/tags/deep-learning.html" class="tag">deep-learning</a>
+                                <a href="/tags/neural-networks.html" class="tag">neural-networks</a>
+                            </div>
+                        </div>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/theme.js"></script>
+</body>
+</html>

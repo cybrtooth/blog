@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Technical Post - Blog</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/post.css">
+    <link rel="icon" type="image/x-icon" href="../static/favicon.ico">
+    <!-- MathJax for mathematical notation -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+    MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+    };
+    </script>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="../" class="nav-title">Blog</a>
+                <div class="nav-links">
+                    <a href="../" class="nav-link">Posts</a>
+                    <a href="../archive.html" class="nav-link">Archive</a>
+                    <a href="../search.html" class="nav-link">Search</a>
+                    <a href="../tags.html" class="nav-link">Tags</a>
+                    <a href="../faq.html" class="nav-link">FAQ</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-toggle-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <article class="post">
+                <header class="post-header">
+                    <h1 class="post-title">Sample Technical Post</h1>
+                    <div class="post-meta">
+                        <time datetime="2024-02-18">February 18, 2024</time>
+                        <span class="reading-time">5 min read</span>
+                        <div class="post-tags">
+                            <a href="../tags/machine-learning.html" class="tag">machine-learning</a>
+                            <a href="../tags/ai.html" class="tag">ai</a>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="post-content">
+                    <p>This is a sample technical blog post demonstrating the format and structure of posts on this blog. It covers topics related to machine learning, AI, and technical research, following the clean and minimalist style of Lilian Weng's blog.</p>
+
+                    <h2>Introduction</h2>
+                    <p>Technical blogs serve as valuable resources for sharing knowledge, documenting research findings, and contributing to the broader community. This post demonstrates the key formatting elements and structure that make technical content accessible and engaging.</p>
+
+                    <h2>Mathematical Notation</h2>
+                    <p>One of the key features of technical blogs is the ability to display mathematical equations clearly. For example, the loss function for a neural network can be expressed as:</p>
+                    
+                    <p>$$L(\theta) = \frac{1}{n} \sum_{i=1}^{n} \ell(f(x_i; \theta), y_i)$$</p>
+                    
+                    <p>Where $\theta$ represents the model parameters, $f(x_i; \theta)$ is the model prediction, and $\ell$ is the loss function.</p>
+
+                    <h2>Code Examples</h2>
+                    <p>Code blocks should be clearly formatted and easy to read:</p>
+
+                    <pre><code class="language-python">
+import numpy as np
+import matplotlib.pyplot as plt
+
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+# Generate data
+x = np.linspace(-10, 10, 100)
+y = sigmoid(x)
+
+# Plot the sigmoid function
+plt.figure(figsize=(8, 6))
+plt.plot(x, y, 'b-', linewidth=2)
+plt.title('Sigmoid Activation Function')
+plt.xlabel('Input')
+plt.ylabel('Output')
+plt.grid(True, alpha=0.3)
+plt.show()
+                    </code></pre>
+
+                    <h2>Key Concepts</h2>
+                    <p>Technical posts should break down complex concepts into digestible sections:</p>
+                    
+                    <ul>
+                        <li><strong>Clarity</strong>: Use clear, concise language to explain technical concepts</li>
+                        <li><strong>Structure</strong>: Organize content with proper headings and sections</li>
+                        <li><strong>Examples</strong>: Provide concrete examples and code snippets</li>
+                        <li><strong>Visual aids</strong>: Include diagrams, plots, and mathematical notation where appropriate</li>
+                    </ul>
+
+                    <h2>Conclusion</h2>
+                    <p>This sample post demonstrates the clean, professional formatting that characterizes effective technical blogs. The focus remains on content clarity while maintaining an aesthetically pleasing and readable design.</p>
+
+                    <h2>References</h2>
+                    <ol>
+                        <li>Sample Reference 1. <em>Journal of Technical Writing</em>, 2024.</li>
+                        <li>Sample Reference 2. <em>Proceedings of Technical Communication</em>, 2024.</li>
+                    </ol>
+                </div>
+
+                <footer class="post-footer">
+                    <div class="post-navigation">
+                        <a href="../" class="nav-button">← Back to Posts</a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../static/js/theme.js"></script>
+</body>
+</html>

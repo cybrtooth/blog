@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive - Blog</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="icon" type="image/x-icon" href="static/favicon.ico">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="nav-container">
+                <a href="/" class="nav-title">Blog</a>
+                <div class="nav-links">
+                    <a href="/" class="nav-link">Posts</a>
+                    <a href="/archive.html" class="nav-link active">Archive</a>
+                    <a href="/search.html" class="nav-link">Search</a>
+                    <a href="/tags.html" class="nav-link">Tags</a>
+                    <a href="/faq.html" class="nav-link">FAQ</a>
+                    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                        <span class="theme-toggle-icon">🌙</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <header class="page-header">
+                <h1>Archive</h1>
+                <p>All posts organized by date</p>
+            </header>
+
+            <div class="archive-list">
+                <section class="archive-year">
+                    <h2>2024</h2>
+                    <div class="archive-posts">
+                        <article class="archive-entry">
+                            <time class="archive-date" datetime="2024-02-18">Feb 18</time>
+                            <div class="archive-content">
+                                <h3><a href="posts/sample-post.html">Sample Technical Post</a></h3>
+                                <div class="archive-tags">
+                                    <span class="tag">machine-learning</span>
+                                    <span class="tag">ai</span>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="archive-entry">
+                            <time class="archive-date" datetime="2024-02-15">Feb 15</time>
+                            <div class="archive-content">
+                                <h3><a href="posts/another-post.html">Understanding Deep Learning Fundamentals</a></h3>
+                                <div class="archive-tags">
+                                    <span class="tag">deep-learning</span>
+                                    <span class="tag">neural-networks</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2024 Blog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="static/js/theme.js"></script>
+    <style>
+        .nav-link.active {
+            color: var(--text-color);
+            font-weight: 600;
+        }
+        
+        .page-header {
+            margin-bottom: 3rem;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            font-size: 2.25rem;
+            color: var(--text-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .page-header p {
+            color: var(--text-secondary);
+            font-size: 1.125rem;
+        }
+        
+        .archive-year {
+            margin-bottom: 3rem;
+        }
+        
+        .archive-year h2 {
+            font-size: 1.5rem;
+            color: var(--text-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+        
+        .archive-posts {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        
+        .archive-entry {
+            display: flex;
+            align-items: flex-start;
+            gap: 2rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--border-color);
+        }
+        
+        .archive-entry:last-child {
+            border-bottom: none;
+        }
+        
+        .archive-date {
+            flex-shrink: 0;
+            width: 60px;
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+        
+        .archive-content {
+            flex: 1;
+        }
+        
+        .archive-content h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .archive-content h3 a {
+            color: var(--text-color);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+        
+        .archive-content h3 a:hover {
+            color: var(--link-color);
+        }
+        
+        .archive-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        @media (max-width: 768px) {
+            .archive-entry {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .archive-date {
+                width: auto;
+            }
+        }
+    </style>
+</body>
+</html>
